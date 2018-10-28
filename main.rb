@@ -7,7 +7,7 @@ if Gem.win_platform? && ARGV[0]
   user = user.encode("UTF-8").capitalize
 end
 
-if user == nil
+if user.nil?
   user = "незнакомец"
 elsif user == "-v"
   puts version
