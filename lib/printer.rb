@@ -2,9 +2,7 @@ class Printer
   def initialize(test)
     @test = test
     begin
-      current_path = File.dirname(__FILE__)
-      file_path = current_path + "/data/results.txt"
-      f = File.open(file_path, "r:UTF-8")
+      f = File.open("./data/results.txt", "r:UTF-8")
       @results = f.readlines
       f.close
     rescue Errno::ENOENT

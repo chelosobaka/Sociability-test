@@ -1,5 +1,5 @@
-require_relative "test.rb"
-require_relative "printer.rb"
+require_relative "lib/test.rb"
+require_relative "lib/printer.rb"
 
 user = ARGV[0]
 

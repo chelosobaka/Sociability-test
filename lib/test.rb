@@ -4,9 +4,8 @@ class Test
 
   def initialize
     begin
-      current_path = File.dirname(__FILE__)
-      file_path = current_path + "/data/questions.txt"
-      f = File.open(file_path, "r:UTF-8")
+
+      f = File.open("./data/questions.txt", "r:UTF-8")
       @questions = f.readlines
       f.close
     rescue Errno::ENOENT
